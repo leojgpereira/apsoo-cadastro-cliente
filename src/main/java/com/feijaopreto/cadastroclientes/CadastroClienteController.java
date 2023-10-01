@@ -3,7 +3,7 @@ package com.feijaopreto.cadastroclientes;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class CadastroClienteController {
     @FXML
     private Label welcomeText;
 

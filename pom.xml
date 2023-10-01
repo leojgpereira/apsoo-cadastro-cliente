@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.feijaopreto.cadastroclientes/com.feijaopreto.cadastroclientes.HelloApplication
+                                com.feijaopreto.cadastroclientes/com.feijaopreto.cadastroclientes.CadastroClienteApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
