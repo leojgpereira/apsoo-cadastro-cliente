@@ -10,9 +10,15 @@ import java.io.IOException;
 public class CadastroClienteApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
         FXMLLoader fxmlLoader = new FXMLLoader(CadastroClienteApplication.class.getResource("views/cadastro-cliente-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Cadastro de Cliente");
         stage.setScene(scene);
         stage.show();
     }
