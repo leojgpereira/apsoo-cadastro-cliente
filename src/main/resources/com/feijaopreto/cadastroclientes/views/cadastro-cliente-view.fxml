@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.feijaopreto.cadastroclientes.CadastroClienteController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="142.0" layoutY="24.0" text="CPF" />
+      <TextField layoutX="142.0" layoutY="50.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="142.0" layoutY="82.0" text="Nome" />
+      <TextField layoutX="142.0" layoutY="108.0" prefHeight="26.0" prefWidth="364.0" />
+      <Label layoutX="142.0" layoutY="141.0" text="Endereço" />
+      <TextField layoutX="142.0" layoutY="167.0" prefHeight="26.0" prefWidth="364.0" />
+      <Label layoutX="142.0" layoutY="201.0" text="Número" />
+      <TextField layoutX="142.0" layoutY="227.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="331.0" layoutY="201.0" text="Bairro" />
+      <TextField layoutX="331.0" layoutY="227.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="142.0" layoutY="260.0" text="Cidade" />
+      <TextField layoutX="142.0" layoutY="286.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="331.0" layoutY="260.0" text="UF" />
+      <ChoiceBox layoutX="331.0" layoutY="286.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="142.0" layoutY="321.0" text="Fone" />
+      <TextField layoutX="142.0" layoutY="347.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="331.0" layoutY="321.0" text="Email" />
+      <TextField layoutX="331.0" layoutY="347.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="331.0" layoutY="24.0" text="Data de Nascimento" />
+      <TextField layoutX="331.0" layoutY="50.0" prefHeight="26.0" prefWidth="175.0" />
+      <Button layoutX="142.0" layoutY="399.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="175.0" text="Cancelar" />
+      <Button layoutX="331.0" layoutY="399.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="175.0" text="Confirmar" />
+   </children>
+</Pane>
