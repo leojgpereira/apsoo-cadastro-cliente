@@ -2,6 +2,8 @@ package com.feijaopreto.cadastroclientes.models;
 
 import com.feijaopreto.cadastroclientes.exceptions.CampoInvalidoException;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
@@ -32,6 +34,25 @@ public class Cliente {
         setEstado(estado);
         setTelefone(fone);
         setEmail(email);
+    }
+
+    public Cliente(String cpf, String dataNascimento, String nome, String endereco, String numero, String bairro, String cidade, String estado, String fone, String email) {
+        this.cpf = cpf;
+
+        try {
+            this.dataNascimento = new SimpleDateFormat("dd/MM/yyyy").parse(dataNascimento);
+        } catch (ParseException e) {
+            this.dataNascimento = null;
+        }
+
+        this.nome = nome;
+        this.rua = endereco;
+        this.numero = Integer.parseInt(numero);
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.telefone = fone;
+        this.email = email;
+        this.estado = new Estado(estado);
     }
 
     public String getCpf() {

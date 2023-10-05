@@ -9,6 +9,10 @@ public class Estado {
         setSigla(sigla);
     }
 
+    public Estado(String sigla) {
+        setSigla(sigla);
+    }
+
     public Integer getId() {
         return id;
     }
